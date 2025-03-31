@@ -11,7 +11,7 @@ VM is nice for easy fun. Used VMWare Workstation Pro and made an Ubuntu 24.04 VM
 - 2 CPU cores
 
 ### ROS2 install steps
-History of commands for install of ROS2 Humble in VM. Resulting steps from https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
+History of commands for install of ROS2 Jazzy in VM. Resulting steps from https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debs.html
 
 ```bash
 sudo apt-get update
