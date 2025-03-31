@@ -54,7 +54,7 @@ ros2 run ur_client_library start_ursim.sh -m ur5e
 
 Terminal 2:
 ```bash
-ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=192.168.56.101 launch_rviz:=true
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=192.168.56.101 launch_rviz:=false
 ```
 
 Terminal 3:
@@ -72,3 +72,25 @@ Expected result
 
 ## Plan a trajectory
 do it.
+
+~~sudo apt install ros-jazzy-moveit-py~~
+
+## Try some cpp
+
+https://moveit.picknik.ai/main/doc/tutorials/your_first_project/your_first_project.html#your-first-c-moveit-project
+
+Terminal 4:
+
+`mkdir -p ~/workspaces/ws_moveit/src`
+
+`cd ~/workspaces/ws_moveit/src`
+
+Copy the `hello-moveit` folder to `src`
+
+cd ~/workspaces/ws_moveit
+
+`colcon build --mixin`
+
+`ros2 run hello_moveit hello_moveit`
+
+the robot moves in RViz and URSim.
