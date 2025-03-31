@@ -49,10 +49,26 @@ sudo usermod -aG docker $USER
 
 Terminal 1:
 ```bash
-ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=yyy.yyy.yyy.yyy use_fake_hardware:=true
+ros2 run ur_client_library start_ursim.sh -m ur5e
 ```
 
 Terminal 2:
 ```bash
+ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur5e robot_ip:=192.168.56.101 launch_rviz:=true
+```
+
+Terminal 3:
+```bash
 ros2 launch ur_moveit_config ur_moveit.launch.py ur_type:=ur5e launch_rviz:=true
 ```
+
+Go to http://192.168.56.101:6080/vnc.html, start robot, make a program with External Control URCap.
+
+Start planning some start and end goals.
+
+Expected result
+![alt text](docs/images/RViz_URSim.png)
+
+
+## Plan a trajectory
+do it.
